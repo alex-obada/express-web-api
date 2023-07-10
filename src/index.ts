@@ -14,7 +14,7 @@ app.use("/api", indexRouter);
 app.use(express.static("public"));
 
 const host = process.env.HOST || "localhost";
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.listen(port, host, () => {
   console.log(`Server running at http://${host}:${port} \n`);
